@@ -1,0 +1,135 @@
+/* jmenu.css
+ *
+ * Copyright (C) 2014 Universidad de Sevilla
+ * 
+ * The use of this project is hereby constrained to the conditions of the 
+ * TDG Licence, a copy of which you may download from 
+ * http://www.tdg-seville.info/License.html
+ * 
+ */
+
+.jMenu {
+	display: table;
+	margin: 0px;
+	padding: 0px;
+	width:100%;
+}
+
+/* First level */
+
+.jMenu li {
+	display: table-cell;
+	background-color: #282c1d;
+	margin: 0px;
+}
+
+.jMenu li a {
+	padding: 10px;
+	display: block;
+	background-color: transparent;
+	color: #fefdf8;
+	cursor: pointer;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	height: 35px;
+    vertical-align: middle;
+	font-weight: bold;
+}
+.jMenu li a:hover {
+	color: #514c52;
+}
+/* Lower levels */
+
+.jMenu li ul {
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	padding: 0;
+	margin: 0;
+}
+
+.jMenu li ul li {
+	background-color: #282c1d;
+	display: block;
+	border-bottom: 1px solid #484548;
+	padding: 0;
+}
+
+.jMenu li ul li.arrow {
+	background-color: #282c1d;
+	background-image: url('../images/arrow_down.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 6px;
+	padding: 0;
+	border-bottom: none;
+	padding-bottom: 10px
+}
+
+.jMenu li ul li a {
+	font-size: 14px;
+	text-transform: none;
+	padding: 7px;
+	display: block;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	text-decoration: none;
+}
+
+.jMenu li ul li a.isParent {
+	background-color: #3a3a3a;
+	background-image: url('../images/arrow_right.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+	text-decoration: none;
+}
+
+.jMenu li ul li a:hover {
+	background-color: #514c52;
+	border-top: 1px solid #322f32;
+	border-bottom: 1px solid #322f32;
+	text-decoration: none;
+}
+
+
+/* More.. */
+
+.startSpace, .endSpace{width:20%;}
+
+
+
+.midSpace, .midSpace2 {width:115px}
+
+.login-li, .register-li {width: 50px;}
+
+.sls {width:5px;}
+
+.login-li a , .register-li a, .sls a  {
+	padding: 8px 3px;
+	font-style:italic;
+}
+
+.engLang, .esLang{width: 50px;} 
+
+.engLang a{
+	background-image:url("../images/ukflg.png");
+	background-size:40px 40px;
+	background-repeat:no-repeat;
+	background-position:center left;
+	height: 50px;
+	width:40px;
+	float:right;	
+	margin-bottom:-15px;
+}
+
+.esLang a{
+	background-image:url("../images/esflg.png");
+	background-size:40px 40px;
+	background-repeat:no-repeat;
+	background-position:center left;
+	height: 50px;
+	width:40px;
+	float:right;	
+	margin-bottom:-15px
+}
